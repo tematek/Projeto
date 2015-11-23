@@ -218,10 +218,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\.DS_Store" />
     <Content Include="Scripts\css\.DS_Store" />
+    <Content Include="Scripts\css\estilo.css" />
     <Content Include="Scripts\css\style5.css" />
     <Content Include="Scripts\images\.DS_Store" />
     <Content Include="Scripts\images\1441261575_Map-Marker-Marker-Inside-Azure.png" />
     <Content Include="Scripts\images\cadastro5.png" />
+    <Content Include="Scripts\images\entrar.png" />
     <Content Include="Scripts\images\favicon.ico" />
     <Content Include="Scripts\images\icons\analyze.svg" />
     <Content Include="Scripts\images\icons\avatar-watson.svg" />
@@ -233,6 +235,8 @@
     <Content Include="Scripts\images\icons\reset.svg" />
     <Content Include="Scripts\images\loading-indicator.gif" />
     <Content Include="Scripts\images\loading-indicator.svg" />
+    <Content Include="Scripts\images\lupa.png" />
+    <Content Include="Scripts\images\lupa2.png" />
     <Content Include="Scripts\images\send.png" />
     <Content Include="Scripts\images\send2.png" />
     <Content Include="Scripts\images\Thumbs.db" />
@@ -275,6 +279,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\demo.js" />
+    <Content Include="Scripts\js\jquery.min.js" />
     <Content Include="Scripts\js\main.js" />
     <Content Include="Scripts\js\mapa.js" />
     <Content Include="Scripts\js\jquery-ui.custom.min.js" />

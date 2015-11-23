@@ -159,8 +159,8 @@ namespace Achados_e_Perdidos_Prototipo.Models
 			SQLServer SQL = new SQLServer();
 			SQL.ConectaDB();
 
-            Qry = "select codCategoria, nomeSubCategoria from tblSubCategoria where codCategoria = '" + categoria +
-                "'  group by codCategoria, nomeSubCategoria order by codCategoria, nomeSubCategoria";
+			Qry = "select codCategoria, nomeSubCategoria from tblSubCategoria where codCategoria = '" + categoria +
+				"'  group by codCategoria, nomeSubCategoria order by codCategoria, nomeSubCategoria";
 
 			SqlDataReader Rs = SQL.DR(Qry);
 
@@ -169,7 +169,7 @@ namespace Achados_e_Perdidos_Prototipo.Models
 			{
 				SubCat SubCatego = new SubCat();
                 SubCatego.SubCatego = Rs["nomeSubCategoria"].ToString();
-                SubCatego.idSubCat = Convert.ToInt32(Rs["codCategoria"].ToString());
+				SubCatego.idSubCat = Convert.ToInt32(Rs["codCategoria"].ToString());
 
 				ListaSubCat.Add(SubCatego);
 

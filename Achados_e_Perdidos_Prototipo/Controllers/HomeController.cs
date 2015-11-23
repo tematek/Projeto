@@ -32,7 +32,7 @@ namespace Achados_e_Perdidos_Prototipo
 			using (HttpClient http = new HttpClient())
 			{
 
-				string url = "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/F7F576x8-nlc-73/classify?text=" + PerguntaEntrada;
+				string url = "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/0235B6x12-nlc-599/classify?text=" + PerguntaEntrada;
 
 				var obj = new { username = "2fd8c727-643b-43c9-9536-c20c37110528", password = "WNEjfF2WAN7S" };
 

@@ -100,9 +100,29 @@ namespace Achados_e_Perdidos_Prototipo
 
 
 
-        internal void ValidaEmailRecSenha(string EmailID, out string Retorn)
-        {
-            throw new NotImplementedException();
-        }
+		public void ValidaEmailRecSenha(string EmailID, out string Retorn)
+		{
+			string query;
+			Retorn = "";
+			SQLServer db = new SQLServer();
+			db.ConectaDB();
+			query = "select * from tblUsuario where emailUsuario = '" + EmailID.Trim() + "'";
+
+			SqlDataReader Rs = db.DR(query);
+
+			if (Rs.Read() == false)
+			{
+
+				Retorn = "ERRO: O e-mail inserido está incorreto ou não foi cadastrado.";
+
+			}
+			else
+			{
+				Retorn = "ok";
+
+			}
+
+			//throw new NotImplementedException();
+		}
     }
 }

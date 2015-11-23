@@ -2,6 +2,7 @@ var geocoder;
 var map;
 var marker;
 
+
 function initialize() {
 	var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
 	var options = {
@@ -25,7 +26,7 @@ function initialize() {
 $(document).ready(function () {
 
 	initialize();
-	
+
 	function carregarNoMapa(endereco) {
 		geocoder.geocode({ 'address': endereco + ', Brasil', 'region': 'BR' }, function (results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
@@ -68,6 +69,7 @@ $(document).ready(function () {
 		});
 	});
 	
+
 	$("#txtEndereco").autocomplete({
 		source: function (request, response) {
 			geocoder.geocode({ 'address': request.term + ', Brasil', 'region': 'BR' }, function (results, status) {
